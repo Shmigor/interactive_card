@@ -5,8 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <main class="main">
+        <aside class="aside">
+            <div class="card-front-side">
+                <div class="oval">
+                    <img src="/images/Oval.png" alt="Big_oval">
+                    <img src="/images/Oval-2.png" alt="small_oval">
+                </div>
+                <div class="number">
+                    <h1 class="card-number">0000 0000 0000 0000</h1>
+                </div>
+                <div class="card-info">
+                    <h3 class="card-holder">Jane Appleseed</h3>
+                    <h3 class="card-date"> 00/00</h3>
+                </div>
+            </div>
+            <div class="card-back-side">
+                <div class="magnet-line"></div>
+                <div class="cvc">
+                    <p class="cvc-number">000</p>
+                </div>
+                <div class="back-side-img">
+                    <img src="/images/back.png" alt="back">
+                </div>
+            </div>
+            <div class="forms-container">
+                <form action="">
+                    <label for="cardHolderName" class="cardHolderNameText">Cardholder Name</label><br>
+                    <input class="cardHolderNameInput" type="text" id="cardHolderName" value="e. g. Jane Appleseed">
+                </form>
+                <form action="">
+                    <label for="cardNumber" class="cardNumber">Card Number</label><br>
+                    <input class="cardNumberInput" type="text" id="cardNumber" value="e.g. 1234 5678 9123 0000">
+                </form>
+                <div class="expDateInput-container">
+                    <form action="">
+                        <label for="expDate" class="expDate">Exp. Date (MM/YY)</label><br>
+                        <input class="dateinput" type="text" id="date" value="MM">
+                        <input class="dateinput" type="text" id="date" value="YY">
+                    </form>
+                    <form action="">
+                        <label for="cvc" class="cvcInputName">CVC</label><br>
+                        <input class="cvcInput" type="text" id="cvc" value="e.g. 123">
+                    </form>
+                </div>
+            </div>
+        </aside>
+    </main>
 </body>
 </html>

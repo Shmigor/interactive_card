@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.js">
 </head>
 <body>
     <main class="main">
@@ -16,36 +17,36 @@
                     <img src="/images/Oval-2.png" alt="small_oval">
                 </div>
                 <div class="number">
-                    <h1 class="card-number">0000 0000 0000 0000</h1>
+                    <h1 class="card-number" id="cardNumber1">0000 0000 0000 0000</h1>
                 </div>
                 <div class="card-info">
-                    <h3 class="card-holder">Jane Appleseed</h3>
-                    <h3 class="card-date"> 00/00</h3>
+                    <h3 class="card-holder" id="cHn1">Jane Appleseed</h3>
+                    <h3 class="card-date" id="dateOutput"> 00/00</h3>
                 </div>
             </div>
             <div class="card-back-side">
                 <div class="magnet-line"></div>
                 <div class="cvc">
-                    <p class="cvc-number">000</p>
+                    <p class="cvc-number" id="cvcNumber">000</p>
                 </div>
                 <div class="back-side-img">
                     <img src="/images/back.png" alt="back">
                 </div>
             </div>
-            <div class="forms-container">
+            <div class="forms-container" id="formsContainer">
                 <form action="">
                     <label for="cardHolderName" class="cardHolderNameText">Cardholder Name</label><br>
-                    <input class="cardHolderNameInput" type="text" id="cardHolderName" value="e. g. Jane Appleseed">
+                    <input class="cardHolderNameInput" type="text" id="cHn2" value="e. g. Jane Appleseed">
                 </form>
                 <form action="">
                     <label for="cardNumber" class="cardNumber">Card Number</label><br>
-                    <input class="cardNumberInput" type="text" id="cardNumber" value="e.g. 1234 5678 9123 0000">
+                    <input class="cardNumberInput" type="text" id="cardNumber2" value="e.g. 1234 5678 9123 0000">
                 </form>
                 <div class="expDateInput-container">
                     <form action="">
                         <label for="expDate" class="expDate">Exp. Date (MM/YY)</label><br>
-                        <input class="dateinput" type="text" id="date" value="MM">
-                        <input class="dateinput" type="text" id="date" value="YY">
+                        <input class="dateinput" type="text" id="dateM" value="MM">
+                        <input class="dateinput" type="text" id="dateY" value="YY">
                     </form>
                     <form action="">
                         <label for="cvc" class="cvcInputName">CVC</label><br>
@@ -53,18 +54,19 @@
                     </form>
                 </div>
                 <div class="btn-container">
-                    <button class="btn">Confirm</button>
+                    <button class="btn" id="myButton1" onclick="replace()">Confirm</button>
                 </div>
             </div>
-            <div class="hover-container">
+            <div class="hover-container" id="hoverContainer">
                 <img class="hover-image" src="/images/Group9.png" alt="check">
                 <h1 class="hover-heading">Thank You</h1>
                 <p class="hover-paragraph">We've added your card details</p>
-                <button class="hover-btn">Continue</button>
+                <button class="hover-btn" id="myButton2" onclick="home()">Continue</button>
             </div>
         </aside>
     </main>
 
-    <script src="index.js"></script>
+<script src="scripit.js"></script>
+
 </body>
 </html>
